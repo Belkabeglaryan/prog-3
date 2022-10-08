@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+    <script src="class.js"></script>
+    <script src="script.js"></script>
+    <style>
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+
+        h1 {
+            padding: 20px;
+            text-align: center;
+        }
+
+        body {
+            font-family: 'Noto Sans', sans-serif !important;
+        }
+    </style>  
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <h1>Programming II Stepanakert</h1>
+            </tr>
+            <tr>
+                <h1>Bella Beglaryan</h1>
+            </tr>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Color</th>
+                <th scope="col">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td scope="row" style="background-color:green;"></td>
+                <td>Green is Grass. It spreads through the gray areas and also increases in number without needing to eat anyone.</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td scope="row" style="background-color:orange;"></td>
+                <td>The yellow ones are herbivores. Moves through the gray cells. They have 60 pts. lives. To survive they must eat food, to reproduce they must eat grass more than 8 times. They die if they have nothing to eat.</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td scope="row" style="background-color:red;"></td>
+                <td>Reds are Predators. Moves through the gray and green cells, first destroying the Greens on which they walked. They have 40 pts. energy. They feed on Herbivores and Goblins can increase their population if they eat more than 8 creatures. They die if they can't kill someone. </td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td scope="row" style="background-color:purple;"></td>
+                <td>Purple is the Hunters. Moves through the Gray, Green and Yellow cells, first destroying the Green and Yellow ones on which they walked. They have 60 pts. lives. Kill Predators and Goblins. They don't breed. They die if they can't kill someone.</td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td scope="row" style="background-color:olive;"></td>
+                <td>Olive is Goblins. Moves through the gray and green cells, first destroying the Greens on which they walked. They have 40 pts. lives. They kill Grass, Predators, Hunters and Herbivores. They breed after 3 meals. They die if they can't kill someone.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
